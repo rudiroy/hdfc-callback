@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Back to MarketPulse…</title>
+</head>
+<body style="font-family:system-ui;background:#0b1220;color:#e8eef8;padding:40px">
+<p>Taking you back to MarketPulse…</p>
+<script>
+  // HDFC InvestRight sends its login here (an https page, as HDFC requires); this page only passes the
+  // one-time request token on to MarketPulse on your own computer. It stores and sends nothing else.
+  var target = "http://marketpulse.test:3000/brokers/hdfcir/callback";
+  location.replace(target + location.search);
+</script>
+<noscript><a href="http://marketpulse.test:3000/brokers/hdfcir/callback">Continue to MarketPulse</a></noscript>
+</body>
+</html>
